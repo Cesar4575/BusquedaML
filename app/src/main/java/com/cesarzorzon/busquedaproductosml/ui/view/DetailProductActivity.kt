@@ -4,15 +4,13 @@ import android.os.Bundle
 import android.text.method.ScrollingMovementMethod
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.cesarzorzon.busquedaproductosml.core.RetrofitHelper
+import com.cesarzorzon.busquedaproductosml.retrofit.RetrofitHelper
 import com.cesarzorzon.busquedaproductosml.data.network.APIService
 import com.cesarzorzon.busquedaproductosml.databinding.ActivityDetailProductBinding
 import com.squareup.picasso.Picasso
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
-import retrofit2.Retrofit
-import retrofit2.converter.gson.GsonConverterFactory
 
 
 class DetailProductActivity : AppCompatActivity() {

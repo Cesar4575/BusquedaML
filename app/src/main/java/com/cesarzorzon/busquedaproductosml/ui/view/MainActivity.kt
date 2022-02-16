@@ -10,7 +10,7 @@ import androidx.appcompat.widget.SearchView
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.cesarzorzon.busquedaproductosml.data.model.Result
-import com.cesarzorzon.busquedaproductosml.core.RetrofitHelper
+import com.cesarzorzon.busquedaproductosml.retrofit.RetrofitHelper
 import com.cesarzorzon.busquedaproductosml.data.network.APIService
 import com.cesarzorzon.busquedaproductosml.databinding.ActivityMainBinding
 import com.cesarzorzon.busquedaproductosml.ui.viewModel.ProductAdapter

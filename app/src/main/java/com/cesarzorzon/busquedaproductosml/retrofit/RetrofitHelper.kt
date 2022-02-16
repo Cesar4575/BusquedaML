@@ -1,4 +1,4 @@
-package com.cesarzorzon.busquedaproductosml.core
+package com.cesarzorzon.busquedaproductosml.retrofit
 
 
 import retrofit2.Retrofit
