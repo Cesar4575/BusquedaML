@@ -4,9 +4,9 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_margin="16dp"
-    android:elevation="7dp"
-    >
+    android:elevation="7dp">
     <TextView
         android:id="@+id/tvprice"
         android:layout_width="wrap_content"
@@ -15,7 +15,7 @@
         android:textColor="@color/purple_700"
         android:textStyle="bold"
         android:textSize="20sp"
-        android:text="PRUEBA"
+        tools:text="PRUEBA"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -29,7 +29,7 @@
         android:textColor="@color/black"
         android:textStyle="bold"
         android:textSize="15sp"
-        android:text="PRUEBA"
+        tools:text="PRUEBA"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
