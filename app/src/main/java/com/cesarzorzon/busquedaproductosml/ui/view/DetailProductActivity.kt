@@ -45,7 +45,6 @@ class DetailProductActivity : AppCompatActivity() {
                 if (call.isSuccessful) {
                     val descripcion = mensaje?.description
                     binding.tvDescripcion.text=descripcion
-
                 }else{
                     showError()
                 }
@@ -53,6 +52,6 @@ class DetailProductActivity : AppCompatActivity() {
         }
     }
     private fun showError() {
-        Toast.makeText(this, "Ha ocurrido un error", Toast.LENGTH_SHORT).show()    }
-
+        Toast.makeText(this, "Ha ocurrido un error", Toast.LENGTH_SHORT).show()
+    }
 }

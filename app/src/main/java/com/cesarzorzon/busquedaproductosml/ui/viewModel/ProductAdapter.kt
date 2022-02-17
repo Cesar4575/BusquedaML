@@ -15,7 +15,7 @@ class  ProductAdapter(private val Resultado: List<Result>, private val  onClickL
     }
     override fun onBindViewHolder(holder: ProductViewHolder, position: Int) {
         val item = Resultado[position]
-        holder.bind(item, onClickListener)
+        holder.cargarDatos(item, onClickListener)
     }
     override fun getItemCount(): Int = Resultado.size
 

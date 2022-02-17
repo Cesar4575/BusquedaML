@@ -26,8 +26,6 @@ class MainActivity : AppCompatActivity(), SearchView.OnQueryTextListener {
     private val retrofit = RetrofitHelper.getRetrofit()
     private lateinit var resulted: ResultadoViewModel
 
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -37,11 +35,10 @@ class MainActivity : AppCompatActivity(), SearchView.OnQueryTextListener {
 
    }
     private fun initRecyclerView() {
-        resulted =ViewModelProvider(this).get(ResultadoViewModel::class.java)
+       resulted =ViewModelProvider(this).get(ResultadoViewModel::class.java)
        adapter = ProductAdapter(resulted.resultado) { resulted -> onItemSelected(resulted) }
-        binding.rvProduct.layoutManager = LinearLayoutManager(this)
+       binding.rvProduct.layoutManager = LinearLayoutManager(this)
        binding.rvProduct.adapter = adapter
-
     }
 
     private fun onItemSelected(result: Result){

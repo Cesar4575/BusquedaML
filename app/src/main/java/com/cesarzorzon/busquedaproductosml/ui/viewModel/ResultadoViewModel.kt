@@ -7,5 +7,4 @@ class ResultadoViewModel:ViewModel() {
 
      var resultado = mutableListOf<Result>()
 
-
 }
