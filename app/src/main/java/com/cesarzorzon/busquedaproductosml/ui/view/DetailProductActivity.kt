@@ -23,9 +23,9 @@ class DetailProductActivity : AppCompatActivity() {
         binding = ActivityDetailProductBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        var title: String? = intent.getStringExtra("titulo")
-        var image: String? = intent.getStringExtra("imagen")
-        var id: String? = intent.getStringExtra("id")
+        val title: String? = intent.getStringExtra("titulo")
+        val image: String? = intent.getStringExtra("imagen")
+        val id: String? = intent.getStringExtra("id")
 
         binding.tvDescripcion.movementMethod = ScrollingMovementMethod()
         binding.tvTitulo.text = title
